@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* border: 4px solid red; */
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  background-color: rgb(226, 248, 248);
+}
+.sub__container {
+  max-width: 1064px;
+  margin: auto;
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+main {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  gap: 1rem;
+}
+
+.box__one {
+  padding: 1rem;
+  border-radius: 6px;
+  height: 100%;
+  background: #fff;
+  flex: 1;
+}
+.box__two {
+  padding: 1rem;
+  border-radius: 6px;
+  height: 100%;
+  background: #fff;
+  flex: 1;
+}
+.box__three {
+  padding: 1rem;
+  border-radius: 6px;
+  height: 100%;
+  background: #fff;
+  flex: 1;
+}
+
+.sara__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sara__box i {
+  color: #1da1f2;
+  font-size: 20px;
+}
+
+.box__one > p,
+.box__three > p {
+  color: rgb(116, 115, 115);
+  line-height: 1.5;
+  font-size: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 88%;
+}
+.box__two > p {
+  color: rgb(116, 115, 115);
+  line-height: 1.5;
+  font-size: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 95%;
+}
+
+.sara__may {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.sara__may > div > p {
+  color: rgb(116, 115, 115);
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
+.comment p {
+  display: flex;
+  align-items: center;
+  color: rgb(116, 115, 115);
+}
+
+.comment i {
+  color: red;
+  font-size: 24px;
+}
+
+/* pricing session */
+
+.wrapper {
+  margin: 5rem 0;
+}
+.wrapper .plan {
+  text-align: center;
+}
+.price__plan {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  color: rgb(116, 115, 115);
+}
+.card {
+  background-color: rgb(255, 246, 229);
+  padding: 1.5rem;
+  width: 400px;
+  margin: 2rem auto 0 auto;
+  border: 1px solid orange;
+  border-radius: 6px;
+  color: rgb(116, 115, 115);
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(199, 195, 195);
+}
+.checked__text {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.checked__text i {
+  color: rgb(85, 202, 85);
+
+  font-size: 18px;
+}
+.checked__text span {
+  font-size: 14px;
+}
+
+.card .pricing {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 12px 0;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #1da1f2;
+}
+button i {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .price__plan {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+  .card {
+    width: 90%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
