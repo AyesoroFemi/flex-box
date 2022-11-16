@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .title-header {
+        width: 80%;
+        margin: 50px auto 4.56rem auto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 37px;
+        line-height: 47px;
+      }
+
+      .swiper {
+        width: 80%;
+        height: 45%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 60px;
+        height: 60px;
+        background: #efece6;
+        border-radius: 50%;
+        font-size: 14px;
+        color: #303e3c;
+        margin-top: -2rem;
+      }
+      .swiper-button-prev {
+        transform: translateY(-4rem);
+        margin-left: 6.5%;
+      }
+      .swiper-button-next {
+        transform: translateY(-4rem);
+        margin-right: 6.5%;
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-content > img {
+        width: 100%;
+        height: 364px;
+      }
+      .swiper-content > div {
+        width: 100%;
+        background-color: #303e3c;
+      }
+      .swiper-content > div > h3 {
+        color: #fff;
+        font-family: serif;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 990px) {
+        .swiper-button-prev {
+          transform: translateY(-8rem);
+          margin-left: 5.5%;
+        }
+        .swiper-button-next {
+          transform: translateY(-8rem);
+          margin-right: 6.5%;
+        }
+      }
+      @media (max-width: 677px) {
+        .swiper-button-prev,
+        .swiper-button-next {
+          background: none;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+          font-size: 18px;
+          font-weight: 700;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="dark__title__container">
+      <div class="dark__with__title">
+      <h1 class="title-header">Amsterdam Museum</h1>
+      <div class="swiper mySwiperTwo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <img src="img.png" alt="" />
+              <div>
+                <h3>Team Suite</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
