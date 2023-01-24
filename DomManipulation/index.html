@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+     body {
+        font-family: sans-serif;
+      }
+      .container {
+        display: flex;
+        gap: 48px;
+      }
+      .boxes {
+        border: 3px solid red;
+        padding: 2rem 1rem;
+        border-radius: 8px;
+      }
+      button {
+        border: none;
+        padding: 10px 20px;
+        width: 100%;
+        border: 2px solid red;
+        background-color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      #main-heading {
+        font-size: 3rem;
+        color: red;
+      }
+      .list-items {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="boxes box-1">
+        <h1 id="heading">Box One</h1>
+        <button onclick="alert('I love Javascript')">Enter</button>
+      </div>
+      <div class="boxes box-2">
+        <h1 id="heading">Box Two</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="boxes box-3">
+        <h1 id="heading">Box Three</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <h1 id="main-heading">Programming language</h1>
+      <ul>
+        <li class="list-items">Javascript</li>
+        <li class="list-items">Typescript</li>
+        <li class="list-items">Python</li>
+        <li class="list-items">Kotlin</li>
+        <li class="list-items">Java</li>
+      </ul>
+    </div> -->
+    <!-- <div class="container">
+      <h1 id="main-heading">Programming language</h1>
+      <ul>
+        <li class="list-items">Javascript</li>
+        <li class="list-items">Typescript</li>
+        <li class="list-items">Python</li>
+        <li class="list-items">Kotlin</li>
+        <li class="list-items">Java</li>
+      </ul>
+    </div> -->
+    <script src="app.js"></script>
+  </body>
+</html>
